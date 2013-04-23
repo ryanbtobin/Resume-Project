@@ -66,15 +66,15 @@ body
 
 .primary-logo
 {
-  font-size: 36px;
+  font-size: 32px;
   color: white;
   float: left;
-  margin: 12px 0px 0px 21px;
+  margin: 21px 0px 0px 21px;
 }
 
 .subtitle
 {
-  font-size: 14px;
+  font-size: 12px;
   color:navajowhite;
   font-weight: 500px;
 }
@@ -96,6 +96,12 @@ body
 {
 font-size: 12px;
 padding:.5px;
+}
+
+.header-container
+{
+  width:780px;
+  margin:0px auto;
 }
 
 a
@@ -164,12 +170,26 @@ h5
   padding:0px 20px;
 }
 
+.profile-pulled
+{
+  float:right;
+}
+
 .profile-photo
 {
-  float: right;
+  float: center;
   border-radius: 50%;
-  max-width: 30%;
-  padding-left: 10px;
+  max-width: 400px;
+  padding: 10px;
+}
+
+.profile-email
+{
+  list-style-type: none;
+  font-family: tahoma;
+  color: darkslategray;
+  text-align: center;
+  font-style: bold;
 }
 
 .standard-paragraph
@@ -200,6 +220,7 @@ h5
 {
   font-size: 10px;
   color: lightgray;
+  float: center;
   text-align: center;
 }
 
