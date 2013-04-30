@@ -50,58 +50,71 @@ table {
 
 body
 {
-  font-family: 'Yanone Kaffeesatz', tahoma;
-  background-color: ghostwhite;
+  font-family: 'PT+Sans+Narrow', tahoma;
+  background-color: whitesmoke;
 }
 
 /*top header*/
 
 .top-header
 {
-  background-color: midnightblue;
+  background-color: whitesmoke;
   border-bottom: 2px solid darkslategray;
-  margin-bottom: 36px;
-  height:72px;
+  height:80px;
+  width: 780px;
+  margin:0 auto;
 }
 
 .primary-logo
 {
   font-size: 32px;
-  color: white;
-  float: left;
-  margin: 21px 0px 0px 21px;
+  color: midnightblue;
+  font-weight: 400;
+  margin-top: 40px;
+  text-shadow: 0 1px 0 white;
+  font-family: 'noto sans';
+  text-align: center;
 }
 
 .subtitle
 {
   font-size: 12px;
-  color:navajowhite;
+  color:darkslategray;
   font-weight: 500px;
 }
 
 .top-nav
 {
-  float:right;
-  color:white;
-  margin: 12px 21px 0px 0px;
-}
-
-.button
-{
-  width: 12px;
+  margin:0 auto;
+  width: 780px;
+  height:36px;
+  color:whitesmoke;
+  list-style-type:none; 
   text-align: center;
+  float: center;
+  border-bottom: 1px solid lightslategray;
 }
 
-.top-nav-list
+.nav-list
 {
 font-size: 12px;
-padding:.5px;
+padding:10px;
+font-family: 'noto sans';
+list-style:none;
+float: left;
+font-weight: 500;
+color:darkslategray;
+}
+
+#top-nav-list
+{
+display:inline-block;
 }
 
 .header-container
 {
   width:780px;
-  margin:0px auto;
+  margin:0 auto;
 }
 
 a
@@ -117,6 +130,17 @@ a
   width: 780px;
   margin: 0px auto;
   background-color: whitesmoke;
+  margin-bottom: 40px;
+  padding-top: 20px;  
+}
+
+.container:after
+{
+  content:"";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
 }
 
 .column-text
@@ -127,9 +151,11 @@ a
 
 h2
 {
-  font-size: 32px;
+  font-size: 28px;
   color:midnightblue;
-  padding:20px;
+  padding:10px 20px;
+  font-family: 'noto sans';
+  text-shadow: 0 1px 0 white;
 }
 
 h3
@@ -137,6 +163,7 @@ h3
   font-size: 24px;
   color: slategray;
   padding: 20px;
+  font-family: 'noto sans';
 }
 
 h4
@@ -149,7 +176,6 @@ h4
 h5
 {
   font-size: 16px;
-  font-style: italic;
   color:gray;
   padding: 10px 20px;
 }
@@ -159,6 +185,7 @@ h5
   font-size: 16px;
   color: gray;
   padding:10px 20px;
+  font-family: 'noto sans';
 }
 
 .resume-list
@@ -168,35 +195,29 @@ h5
   color: gray;
   margin-left: 40px;
   padding:0px 20px;
+  font-family: 'noto sans';
 }
 
 .profile-pulled
 {
   float:right;
+  height:260px;
+  width: 260px;
 }
 
 .profile-photo
 {
-  float: center;
-  border-radius: 50%;
-  max-width: 400px;
+  border-radius: 70%;
+  width: 240px;
   padding: 10px;
-}
-
-.profile-email
-{
-  list-style-type: none;
-  font-family: tahoma;
-  color: darkslategray;
-  text-align: center;
-  font-style: bold;
 }
 
 .standard-paragraph
 {
-  font-size: 18px;
+  font-size: 14px;
   color: darkslategray;
   padding: 10px 20px;
+  letter-spacing: -.05em;
 }
 
 .entry-link
@@ -209,10 +230,11 @@ h5
 
 .bottom-nav
 {
-  top-border: 2px solid darkgray;
-  max-width: 200px;
+  border-top: 1px solid darkgray;
+  width: 780px;
   margin: 0px auto;
-  padding: 80px 0px;
+  padding: 10px 0px;
+  float: center;
 }
 
 
@@ -220,8 +242,8 @@ h5
 {
   font-size: 10px;
   color: lightgray;
-  float: center;
-  text-align: center;
+  display: inline;
+  padding:10px;
 }
 
 script
@@ -229,4 +251,155 @@ script
 float: right;
 padding: 20px;;
 vertical-align: right;
+}
+
+.bottom-footer
+{
+  width: 780px;
+  margin: 0px auto;
+  text-align: center;
+}
+
+.copyright
+{
+  font-size: 10px;
+  color: lightgray;
+  display: inline;
+  padding:2px;
+}
+
+.social-box
+{
+  height:210px;
+  width:256px;
+  margin: 0 auto;
+  float: right;
+}
+
+.social-1
+{
+  width:128px;
+  height:210px;
+  float: left;
+}
+
+.social-2
+{
+  width:128px;
+  height:210px;
+  float: right;
+}
+
+.profile
+{
+  float:right;
+  width:260px;
+}
+
+.social-icons
+{
+  padding: 10px 40px 10px 40px;
+}
+
+.social-2-icons
+{
+  list-style-type: none;
+}
+
+/*blog*/
+
+.entry-title
+{
+  font-size: 28px;
+  color:midnightblue;
+  font-family: 'noto sans';
+  text-shadow: 0 1px 0 white;
+  padding-bottom: 0px;
+}
+
+.authorship
+{
+  font-size: 10px;  
+  color: gray;
+  font-family: 'noto sans';
+}
+
+/*experiments*/
+
+.original
+{
+  width:360px;
+  border-right: 30px;
+  float:left;
+}
+
+.original-image
+{
+  width: 360px;
+  margin-top: 20px;
+}
+
+.recreate
+{
+  margin-top: 20px;
+  width: 360px;
+  float: right;
+  height:270px;
+  border: 1px solid gray;
+  background-color: #336666;
+}
+
+.login-box
+{
+  width: 320px;
+  height: 135px;
+  background-color:#003333;
+  box-shadow: 0px 20px 100px black;
+  margin:0px 20px 0px 20px;
+}
+
+.login-title
+{
+  font-size: 8px;
+  color: white;
+  padding-top:12px;
+  padding-bottom: 2px;
+}
+
+.login-field
+{
+  width: 270px;
+  height: 20px;
+  background-color: white;
+  margin:0px 30px 0px 20px;
+  padding-top: 0px;
+}
+
+.login-button
+{
+  margin-left: 20px;
+  border-radius: 40%;
+  background-color: #339999;
+  width: 50px;
+  height: 25px;
+  margin-top: 15px;
+  float: left;
+}
+
+.button-text
+{
+  font-size: 12px;
+  color:white;
+  padding-top:6px;
+  padding-left:10px;
+}
+
+.forgot-text
+{
+  font-size:8px;
+  color: #996600;
+  float: right;
+  margin-top: 15px;
+  margin-right:10px;
+  letter-spacing: .12em;
 }
